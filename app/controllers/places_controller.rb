@@ -12,7 +12,7 @@ class PlacesController < ApplicationController
       end
     
       def create
-        @place = Company.new(params["place"])
+        @place = Place.new(params["place"])
         @place.save
         redirect_to "/places"
       end
