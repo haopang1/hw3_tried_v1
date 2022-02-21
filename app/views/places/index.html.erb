@@ -1,0 +1,15 @@
+
+
+<h1>Places I' ha've been</h1>
+ 
+ <ul>
+   <% for place in @Places %>
+    <li>
+      <a href="/places/<%= place.id %>">
+        <%= place.name %>
+      </a>
+    </li>
+   <% end %>
+</ul>
+
+<a href="/places/new">Add a place</a>

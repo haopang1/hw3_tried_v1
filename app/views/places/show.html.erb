@@ -1,0 +1,13 @@
+<h1><%= @place.name %></h1>
+
+<h3>Contacts</h3>
+<ul>
+    <% for zebra in @company.contacts %>
+        <li>
+            <%= zebra.last_name %>, <%= zebra.first_name %>
+        </li>
+    <% end %>
+</ul>
+<a href="/contacts/new?company_id=<%= @company.id %>">Add contact</a>
+
+<a href="/companies">Back to all companies</a>
